@@ -9,7 +9,7 @@ module rim_cross_section() {
 }
 
 module outer_rim_shape() {
-	rotate_extrude() {
+	rotate_extrude($fn = 8) {
 		intersection() {
 			rim_cross_section();
 			2d_half_space();
@@ -18,7 +18,7 @@ module outer_rim_shape() {
 }
 
 module inner_rim_shape() {
-	rotate_extrude() {
+	rotate_extrude($fn = 8) {
 		difference() {
 			rim_cross_section();
 			2d_half_space();
@@ -26,9 +26,11 @@ module inner_rim_shape() {
 	}
 }
 
-module struts_shape() {
-	rotate_extrude() {
-		import("_cross_section.dxf", layer = "struts");
+module struts_plane() {
+	scale([1e6, 1e6, 1]) {
+		rotate_extrude($fn = 8) {
+			import("_cross_section.dxf", layer = "struts");
+		}
 	}
 }
 
@@ -78,10 +80,11 @@ module cookie_cutter() {
 //		}
 		
 		// Struts.
-		if ($children > 1) {
-			plane_minkowski() {
-				struts_shape();
-				children(1);	
+		intersection() {
+			struts_plane();
+			
+			infinite_extrude() {
+				children(1);
 			}
 		}
 	}
