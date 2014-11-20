@@ -1,9 +1,3 @@
-rim_bottom_width = .4;
-rim_top_width = 2;
-rim_height = 12;
-rim_base_height = 1.5;
-rim_base_width = 5;
-
 module 2d_half_space() {
 	translate([0, -1e6]) {
 		square(2e6);
@@ -55,6 +49,7 @@ module infinite_extrude() {
 
 module cookie_cutter() {
 	union() {
+		// Outer rim.
 		difference() {
 			plane_minkowski() {
 				outer_rim_shape();
@@ -66,21 +61,23 @@ module cookie_cutter() {
 			}
 		}
 		
-		intersection() {
-			plane_minkowski() {
-				inner_rim_shape();
-				
-				difference() {
-					square(2e6, center = true);
-					children(0);
-				}
-			}
-			
-			infinite_extrude() {
-				children(0);
-			}
-		}
+		// Inner rim.
+//		intersection() {
+//			plane_minkowski() {
+//				inner_rim_shape();
+//				
+//				difference() {
+//					square(2e6, center = true);
+//					children(0);
+//				}
+//			}
+//			
+//			infinite_extrude() {
+//				children(0);
+//			}
+//		}
 		
+		// Struts.
 		if ($children > 1) {
 			plane_minkowski() {
 				struts_shape();
