@@ -2,3 +2,5 @@
 *.pyc
 *.dxf
 *.stl
+/src/*.scad
+!/src/_*.scad

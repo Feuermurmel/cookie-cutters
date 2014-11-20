@@ -11,7 +11,7 @@ module 2d_half_space() {
 }
 
 module rim_cross_section() {
-	import("cross_section.dxf", layer = "rim");
+	import("_cross_section.dxf", layer = "rim");
 }
 
 module outer_rim_shape() {
@@ -34,7 +34,7 @@ module inner_rim_shape() {
 
 module struts_shape() {
 	rotate_extrude() {
-		import("cross_section.dxf", layer = "struts");
+		import("_cross_section.dxf", layer = "struts");
 	}
 }
 
