@@ -26,10 +26,24 @@ module inner_rim_shape() {
 	}
 }
 
+module fillings_shape() {
+	rotate_extrude($fn = 8) {
+		import("_cross_section.dxf", layer = "fillings");
+	}
+}
+
 module struts_plane() {
 	scale([1e6, 1e6, 1]) {
-		rotate_extrude($fn = 8) {
+		rotate_extrude($fn = 4) {
 			import("_cross_section.dxf", layer = "struts");
+		}
+	}
+}
+
+module fillings_plane() {
+	scale([1e6, 1e6, 1]) {
+		rotate_extrude($fn = 4) {
+			import("_cross_section.dxf", layer = "fillings");
 		}
 	}
 }
@@ -58,9 +72,8 @@ module cookie_cutter() {
 				children(0);
 			}
 			
-			infinite_extrude() {
+			infinite_extrude()
 				children(0);
-			}
 		}
 		
 		// Inner rim.
@@ -80,12 +93,23 @@ module cookie_cutter() {
 //		}
 		
 		// Struts.
-		intersection() {
-			struts_plane();
-			
-			infinite_extrude() {
-				children(1);
+//		intersection() {
+//			struts_plane();
+//			
+//			infinite_extrude() {
+//				children(1);
+//			}
+//		}
+		
+		// Fillings.
+		difference() {
+			plane_minkowski() {
+				fillings_shape();
+				children(2);
 			}
+			
+			infinite_extrude()
+				children(0);
 		}
 	}
 }
@@ -95,6 +119,7 @@ module cookie_cutter_from_dxf(file_name) {
 		cookie_cutter() {
 			import(file_name, layer = "shape");
 			import(file_name, layer = "struts");
+			import(file_name, layer = "fillings");
 		}
 	}
 }
