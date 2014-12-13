@@ -15,7 +15,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91+devel r13724 custom"
-   sodipodi:docname="template_cross_section.svg">
+   sodipodi:docname="template.svg">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -25,11 +25,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="7.9195959"
-     inkscape:cx="23.545713"
-     inkscape:cy="26.140725"
+     inkscape:zoom="2.8"
+     inkscape:cx="66.402048"
+     inkscape:cy="45.172045"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="svg2"
      showgrid="true"
      inkscape:window-width="1680"
      inkscape:window-height="1002"
@@ -38,7 +38,8 @@
      inkscape:window-maximized="0"
      inkscape:snap-nodes="false"
      inkscape:snap-bbox="true"
-     inkscape:bbox-nodes="true">
+     inkscape:bbox-nodes="true"
+     inkscape:bbox-paths="false">
     <inkscape:grid
        type="xygrid"
        id="grid3339"
@@ -61,38 +62,35 @@
   <g
      inkscape:groupmode="layer"
      id="layer3"
-     inkscape:label="shape"
-     transform="translate(0,-197.00001)">
-    <path
-       style="display:inline;fill:#000000;fill-opacity:0.39215687;stroke:none"
-       d="m 0.4,297.00002 1.004345,-9.27088 C 1.497835,286.86617 2.013804,286.50002 2.8,286.50002 l 1.199999,0 0,-1.5 -3.999999,0 0,11.99999 z"
-       id="path2990"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cccccccc" />
+     inkscape:label="shape">
+    <circle
+       style="fill:#000000;fill-opacity:0.39215686;stroke:none;stroke-opacity:0.39215686"
+       id="path4145"
+       cx="10"
+       cy="90"
+       r="10" />
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer2"
-     inkscape:label="struts"
-     transform="translate(0,-197.00001)">
+     inkscape:label="struts">
     <rect
-       style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#ff0000;fill-opacity:0.39215687;fill-rule:nonzero;stroke:none;stroke-width:0.03543307;marker:none;enable-background:accumulate"
-       id="rect2985"
-       width="0.1"
-       height="1.4999999"
-       x="-0.10000037"
-       y="285.00003" />
+       style="fill:#ff0000;fill-opacity:0.39215686;stroke:none;stroke-opacity:0.39215686"
+       id="rect4137"
+       width="20"
+       height="2"
+       x="0"
+       y="89" />
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer4"
-     inkscape:label="fillings"
-     transform="translate(0,-197.00001)">
-    <path
-       style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#ff00ff;fill-opacity:0.39215687;fill-rule:nonzero;stroke:none;stroke-width:0.03543307;marker:none;enable-background:accumulate"
-       d="m 0,285.00003 1.7,-10e-6 -1.3,11.99999 -0.4,0 z"
-       id="rect2985-9"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccc" />
+     inkscape:label="fillings">
+    <circle
+       style="fill:#ff00ff;fill-opacity:0.39215686;stroke:none;stroke-opacity:0.39215686"
+       id="path4139"
+       cx="10"
+       cy="82"
+       r="2" />
   </g>
 </svg>

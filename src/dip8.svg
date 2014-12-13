@@ -9,11 +9,12 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="744.09448819"
-   height="1052.3622047"
+   width="100mm"
+   height="100mm"
+   viewBox="0 0 100 100"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.5 r10040"
+   inkscape:version="0.91+devel r13724 custom"
    sodipodi:docname="dip8.svg">
   <defs
      id="defs4" />
@@ -25,8 +26,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.8"
-     inkscape:cx="111.86838"
-     inkscape:cy="107.15429"
+     inkscape:cx="127.64428"
+     inkscape:cy="7.1583257"
      inkscape:document-units="mm"
      inkscape:current-layer="layer3"
      showgrid="true"
@@ -35,15 +36,15 @@
      inkscape:window-x="0"
      inkscape:window-y="22"
      inkscape:window-maximized="0"
-     inkscape:snap-nodes="false"
-     inkscape:snap-global="false">
+     inkscape:snap-bbox="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-nodes="false">
     <inkscape:grid
        type="xygrid"
-       id="grid3050"
-       empspacing="5"
-       visible="true"
-       enabled="true"
-       snapvisiblegridlinesonly="true" />
+       id="grid3339"
+       spacingx="1mm"
+       spacingy="1mm"
+       units="mm" />
   </sodipodi:namedview>
   <metadata
      id="metadata7">
@@ -58,41 +59,21 @@
     </rdf:RDF>
   </metadata>
   <g
-     inkscape:label="shape"
      inkscape:groupmode="layer"
-     id="layer1"
-     style="display:inline">
+     id="layer3"
+     inkscape:label="shape">
     <path
-       style="fill:#000000;fill-opacity:0.39215686;stroke:none"
-       d="m 27.25,825.20586 0,36.34375 -27.25,0 0,54.53125 c 12.5444,0 22.71875,10.1432 22.71875,22.6875 0,12.5443 -10.17435,22.71875 -22.71875,22.71875 l 0,54.53129 27.25,0 0,36.3438 36.34375,0 0,-36.3438 27.25,0 0,36.3438 36.34375,0 0,-36.3438 27.28125,0 0,36.3438 36.3125,0 0,-36.3438 27.28125,0 0,36.3438 36.34375,0 0,-36.3438 27.25,0 0,-154.46879 -27.25,0 0,-36.34375 -36.34375,0 0,36.34375 -27.28125,0 0,-36.34375 -36.3125,0 0,36.34375 -27.28125,0 0,-36.34375 -36.34375,0 0,36.34375 -27.25,0 0,-36.34375 -36.34375,0 z"
+       style="display:inline;fill:#000000;fill-opacity:0.39215686;stroke:none"
+       d="m 7.7399302,35.479829 0,10.322865 -7.7399302,0 0,15.48874 c 3.5630381,0 6.4529012,2.88102 6.4529012,6.44402 0,3.56302 -2.8898631,6.45291 -6.4529012,6.45291 l 0,15.488753 7.7399302,0 0,10.32288 10.3228678,0 0,-10.32288 7.739931,0 0,10.32288 10.322867,0 0,-10.32288 7.748807,0 0,10.32288 10.313991,0 0,-10.32288 7.748807,0 0,10.32288 10.322866,0 0,-10.32288 7.739931,0 0,-43.874423 -7.739931,0 0,-10.322865 -10.322866,0 0,10.322865 -7.748807,0 0,-10.322865 -10.313991,0 0,10.322865 -7.748807,0 0,-10.322865 -10.322867,0 0,10.322865 -7.739931,0 0,-10.322865 -10.3228678,0 z"
        id="path3054-11-3"
        inkscape:connector-curvature="0" />
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer2"
-     inkscape:label="struts"
-     style="display:inline">
-    <rect
-       style="color:#000000;fill:#ff0000;fill-opacity:0.39215686;fill-rule:nonzero;stroke:none;stroke-width:14.17322826;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       id="rect3756"
-       width="4.2857141"
-       height="10.714286"
-       x="-5.7142859"
-       y="-887.005"
-       transform="scale(1,-1)" />
-  </g>
+     inkscape:label="struts" />
   <g
      inkscape:groupmode="layer"
-     id="layer3"
-     inkscape:label="fillings">
-    <rect
-       style="color:#000000;fill:#ff0000;fill-opacity:0.39215686;fill-rule:nonzero;stroke:none;stroke-width:14.17322826;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       id="rect3756-3"
-       width="0.35714272"
-       height="2.1428573"
-       x="-0.42857146"
-       y="-900.2193"
-       transform="scale(1,-1)" />
-  </g>
+     id="layer4"
+     inkscape:label="fillings" />
 </svg>

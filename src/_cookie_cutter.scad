@@ -7,7 +7,7 @@ module 2d_half_space() {
 }
 
 module rim_cross_section() {
-	import("_cross_section.dxf", layer = "rim");
+	import("_cross_section.dxf", layer = "shape");
 }
 
 module outer_rim_shape() {
