@@ -25,11 +25,11 @@ module subtract() {
 		_unfuck_nothing()
 			children(0);
 		
-		for(i = [1:$children - 1])
-			children(i);
+		if ($children > 1)
+			for(i = [1:$children - 1])
+				children(i);
 	}
 }
-
 
 module infinite_extrude() {
 	translate([0, 0, -1e6])
