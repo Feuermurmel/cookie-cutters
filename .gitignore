@@ -1,7 +1,2 @@
 /config.mk
 *.pyc
-*.dxf
-*.stl
-*.d
-/src/*.scad
-!/src/_*.scad
