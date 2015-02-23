@@ -12,7 +12,7 @@ module rim_cross_section() {
 
 module outer_rim_shape() {
 	rotate_extrude($fn = 8) {
-		intersect() {
+		intersection() {
 			rim_cross_section();
 			2d_half_space();
 		}
@@ -21,7 +21,7 @@ module outer_rim_shape() {
 
 module inner_rim_shape() {
 	rotate_extrude($fn = 8) {
-		subtract() {
+		difference() {
 			rim_cross_section();
 			2d_half_space();
 		}
@@ -51,7 +51,7 @@ module fillings_plane() {
 }
 
 module plane_minkowski() {
-	sum() {
+	minkowski() {
 		children(0);
 		
 		linear_extrude(height = 1e-3)
@@ -62,7 +62,7 @@ module plane_minkowski() {
 module cookie_cutter() {
 	union() {
 		// Outer rim.
-		subtract() {
+		difference() {
 			plane_minkowski() {
 				outer_rim_shape();
 				children(0);
@@ -73,11 +73,11 @@ module cookie_cutter() {
 		}
 		
 		// Inner rim.
-//		intersect() {
+//		intersection() {
 //			plane_minkowski() {
 //				inner_rim_shape();
 //				
-//				subtract() {
+//				difference() {
 //					square(2e6, center = true);
 //					children(0);
 //				}
@@ -89,7 +89,7 @@ module cookie_cutter() {
 //		}
 		
 		// Struts.
-		intersect() {
+		intersection() {
 			struts_plane();
 			
 			infinite_extrude() {
@@ -98,7 +98,7 @@ module cookie_cutter() {
 		}
 		
 		// Fillings.
-		subtract() {
+		difference() {
 			plane_minkowski() {
 				fillings_shape();
 				children(2);
