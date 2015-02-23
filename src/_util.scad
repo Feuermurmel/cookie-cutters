@@ -36,3 +36,13 @@ module infinite_extrude() {
 		linear_extrude(height = 2e6)
 			children(0);
 }
+
+module sum() {
+	minkowski() {
+		_unfuck_nothing()
+			children(0);
+		
+		_unfuck_nothing()
+			children(1);
+	}
+}

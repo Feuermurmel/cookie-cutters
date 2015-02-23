@@ -51,7 +51,7 @@ module fillings_plane() {
 }
 
 module plane_minkowski() {
-	minkowski() {
+	sum() {
 		children(0);
 		
 		linear_extrude(height = 1e-3)
