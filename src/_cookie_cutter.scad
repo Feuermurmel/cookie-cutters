@@ -1,8 +1,8 @@
-use <_util.scad>
+include <_util.scad>
 
 module 2d_half_space() {
-	translate([0, -1e6]) {
-		square(2e6);
+	translate([0, -_inf]) {
+		square(_inf2);
 	}
 }
 
@@ -35,7 +35,7 @@ module fillings_shape() {
 }
 
 module struts_plane() {
-	scale([1e6, 1e6, 1]) {
+	scale([_inf, _inf, 1]) {
 		rotate_extrude($fn = 4) {
 			import("_cross_section.dxf", layer = "struts");
 		}
@@ -43,7 +43,7 @@ module struts_plane() {
 }
 
 module fillings_plane() {
-	scale([1e6, 1e6, 1]) {
+	scale([_inf, _inf, 1]) {
 		rotate_extrude($fn = 4) {
 			import("_cross_section.dxf", layer = "fillings");
 		}
@@ -54,7 +54,7 @@ module plane_minkowski() {
 	minkowski() {
 		children(0);
 		
-		linear_extrude(height = 1e-3)
+		linear_extrude(height = _eps)
 			children(1);
 	}
 }
@@ -78,7 +78,7 @@ module cookie_cutter() {
 //				inner_rim_shape();
 //				
 //				difference() {
-//					square(2e6, center = true);
+//					square(_inf2, center = true);
 //					children(0);
 //				}
 //			}
