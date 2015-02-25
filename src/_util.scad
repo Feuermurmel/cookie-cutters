@@ -8,3 +8,21 @@ module infinite_extrude() {
 		linear_extrude(height = _inf2)
 			children(0);
 }
+
+module sum() {
+	intersection() {
+		translate([-_inf2, 0, 0]) {
+			minkowski() {
+				translate([_inf, 0, 0]) {
+					children(0);
+				}
+				
+				translate([_inf, 0, 0]) {
+					children(1);
+				}
+			}
+		}
+		
+		cube(_inf2, center = true);
+	}
+}
