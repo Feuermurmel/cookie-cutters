@@ -42,14 +42,6 @@ module struts_plane() {
 	}
 }
 
-module fillings_plane() {
-	scale([_inf, _inf, 1]) {
-		rotate_extrude($fn = 4) {
-			import("_cross_section.dxf", layer = "fillings");
-		}
-	}
-}
-
 module plane_minkowski() {
 	sum() {
 		children(0);
