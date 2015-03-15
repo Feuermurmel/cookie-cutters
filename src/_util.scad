@@ -23,6 +23,6 @@ module sum() {
 			}
 		}
 		
-		cube(_inf2, center = true);
+		cube(_inf, center = true);
 	}
 }
